@@ -118,7 +118,7 @@ void DNSResolver::reciveAndParse() {
 }
 
 DNSResolver::~DNSResolver() {
-    close(sockfd);
+    close(sockfd) ;
 }
 
 void DNSResolver::fill_fd_set(fd_set &rdfds, fd_set &wrfds) {
